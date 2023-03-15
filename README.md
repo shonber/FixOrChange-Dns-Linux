@@ -18,6 +18,6 @@ nameserver 8.8.4.4
 5) sudo systemctl restart NetworkManager.service // If it doesnt work use sudo service restart NetworkManager. It isnt that necessary, wont change outcome.
 
 
-/*I dont like people not understandig what they do, heres what you did:
+Explaination:
 
 You modifided /etc/dhcp/dhclient.conf and added the adresses, Then used chattr -i to set /etc/resolv.conf/ as a writable file, then changed the file again, set /etc/resolv.conf/ as unwritable and restarted Network Manager*/
